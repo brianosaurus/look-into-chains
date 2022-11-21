@@ -33,7 +33,7 @@ cosmoshub-2 -> cosmoshub-3
 
 cosmovisor for users ... If someone is running a validator cosmovisor downloads the binary but doesn't automatically restart the node (depending whether or not someone configures this).
 
-## Gaia Anti-Penultimate Upgrade
+## Gaia Antipenultimate Upgrade
 1. What was the upgrade
 
 Governance Proposal for Gravity DEX Adoption to the Cosmos Hub - Gravity DEX, proposal 38.
@@ -75,5 +75,5 @@ Binary 5.0.0
 
 cosmovisor for users ... If someone is running a validator cosmovisor downloads the binary but doesn't automatically restart the node (depending whether or not someone configures this).
 
-## Osmosis Anti-Penultimate Upgrade
+## Osmosis Antipenultimate Upgrade
 There isn't one. There are only two software upgrade proposals for osmosis mainnet. I'm speficially looking at "/osmos-sdk/SoftwareUpgradeProposal" types that are successful.
