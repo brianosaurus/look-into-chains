@@ -12,17 +12,29 @@ cosmoshub-3 -> cosmoshub-4
 1. Code changes and why they were required for the upgrade
 1. How was the upgrade performed
 
+cosmovisor
+
 ## Gaia Penultimate Upgrade
 1. What was the upgrade
 1. MetaData changes from the upgrade
-1. Code changes and why they were required for the upgrade
-1. How was the upgrade performed
 
-## Gaia Anti-Penultimate Upgrade\
+cosmoshub-2 -> cosmoshub-3
+
+3. Code changes and why they were required for the upgrade
+4. How was the upgrade performed
+
+cosmovisor
+
+## Gaia Anti-Penultimate Upgrade
 1. What was the upgrade
 1. MetaData changes from the upgrade
-1. Code changes and why they were required for the upgrade
-1. How was the upgrade performed
+
+cosmoshub-1 -> cosmoshub-2
+
+3. Code changes and why they were required for the upgrade
+4. How was the upgrade performed
+
+cosmovisor
 
 ## Osmosis Last Upgrade
 1. What was the upgrade
