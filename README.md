@@ -7,12 +7,12 @@ v7-Theta - SDK bump v0.45.1, ibc-go bump v3.0.0, ads interchain accounts, liquid
 
 Binary Version: gaia-7.0.0
 
-3. MetaData changes from the upgrade
+2. MetaData changes from the upgrade
 
 cosmoshub-3 -> cosmoshub-4
 
-2. Code changes and why they were required for the upgrade
-3. How was the upgrade performed
+3. Code changes and why they were required for the upgrade
+4. How was the upgrade performed
 
 cosmovisor for users ... If someone is running a validator cosmovisor downloads the binary but doesn't automatically restart the node (depending whether or not someone configures this).
 
