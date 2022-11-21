@@ -7,7 +7,7 @@ v7-Theta - SDK bump v0.45.1, ibc-go bump v3.0.0, ads interchain accounts, liquid
 
 Binary Version: gaia-7.0.0
 
-2. MetaData changes from the upgrade
+2. Metadata changes from the upgrade
 
 cosmoshub-3 -> cosmoshub-4
 
@@ -24,7 +24,7 @@ bumps the liquidity module to v1.4.2
 
 Binary Version gaia v6.0.0
 
-2. MetaData changes from the upgrade
+2. Metadata changes from the upgrade
 
 cosmoshub-2 -> cosmoshub-3
 
@@ -40,7 +40,7 @@ Governance Proposal for Gravity DEX Adoption to the Cosmos Hub - Gravity DEX, pr
 
 Binary Version +sha3: v5.0.0-4760cf1f1266accec7a107f440d46d9724c6fd08
 
-2. MetaData changes from the upgrade
+2. Metadata changes from the upgrade
 
 cosmoshub-1 -> cosmoshub-2
 
@@ -56,7 +56,7 @@ Osmosis v4 Berylium Upgrade - Stability improvements, cheaper TXs, faster comput
 
 Binary 4.0.0
 
-2. MetaData changes from the upgrade
+2. Metadata changes from the upgrade
 3. Code changes and why they were required for the upgrade
 4. How was the upgrade performed
 
@@ -69,7 +69,7 @@ Osmosis v5 Boron Upgrade - Enables OFAC, Bech23IBC, Clawback, Whitelists tokens 
 
 Binary 5.0.0
 
-2. MetaData changes from the upgrade
+2. Metadata changes from the upgrade
 3. Code changes and why they were required for the upgrade
 4. How was the upgrade performed
 
