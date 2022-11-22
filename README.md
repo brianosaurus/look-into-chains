@@ -9,12 +9,41 @@ Binary Version: gaia-7.0.0
 
 2. Metadata changes from the upgrade
 
-cosmoshub-3 -> cosmoshub-4
+```json
+    "interchainaccounts": {
+      "controller_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "ports": [],
+        "params": {
+          "controller_enabled": true
+        }
+      },
+      "host_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "port": "icahost",
+        "params": {
+          "host_enabled": true,
+          "allow_messages": []
+        }
+      }
+    },
+```
 
 3. Code changes and why they were required for the upgrade
+
+Look [here](https://github.com/cosmos/gaia/blob/v7.0.0/app/app.go) for details how the controller params and icaModule (inter chain accounts) initialize.
+
+Specifically this line sets the params seen above
+```go
+icaModule.InitModule(ctx, controllerParams, hostParams)
+```
+
+
 4. How was the upgrade performed
 
-cosmovisor for users ... If someone is running a validator cosmovisor downloads the binary but doesn't automatically restart the node (depending whether or not someone configures this).
+[Here](https://github.com/cosmos/gaia/blob/main/docs/migration/cosmoshub-4-v7-Theta-upgrade.md#v7-theta-upgrade-steps) are the steps but an operator can use cosmovisor if they aren't a  validaor node.
 
 ## Gaia Penultimate Upgrade
 1. What was the upgrade
@@ -34,6 +63,14 @@ Binary Version gaia v6.0.2
 ```json
     "feegrant": {
       "allowances": []
+    },
+```
+
+```json
+      "packetfowardmiddleware": {
+      "params": {
+        "fee_percentage": "0.000000000000000000"
+      }
     },
 ```
 
@@ -200,7 +237,7 @@ cosmoshub-3 -> cosmoshub-4
 
 3. Code changes and why they were required for the upgrade
 
-See [app.go v4.0.2](https://github.com/cosmos/gaia/blob/v4.0.2/app/app.go) for details on where the liquidity module was added as a module and keeper. 
+See [app.go v4.0.2](https://github.com/cosmos/gaia/blob/v4.0.2/app/app.go) for details on where the modules were added to the node.
 
 There is no upgrade handler for this release. The modules automatically run their own InitGenesis routines.
 
